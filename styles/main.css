@@ -18,7 +18,7 @@ body {
   min-width: 375px; 
   max-width: 1200px;
   height: 100%; 
-  width: 80%;     
+  width: 80vw;     
 } 
 
 header, footer {
@@ -33,7 +33,7 @@ header, footer {
 
 header {
   font-family: Lora, sans-serif;
-  font-size: 2rem;
+  font-size: 2em;
   margin: auto;
 }
 
@@ -115,7 +115,7 @@ p {
 }
 
 #introduction {
-  width: 50%;
+  width: 80%;
   padding: 1rem;
 }
 
@@ -253,3 +253,4 @@ p {
 .light-heading {
   color: var(--palette-color-four);
 }
+
