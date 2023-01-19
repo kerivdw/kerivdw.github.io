@@ -1,9 +1,78 @@
+<!DOCTYPE html>
 <html>
   <head>
-    <title>My blog</title>
-  <body>
-    <h1>Kia ora Taiao! (Hello World!)</h1> 
-    <p> This is the beginning of my website home page.</p>
-    <p> It will eventually contain a list of links to all my blogs. </p>
+    <title>Keri van der Westhuizen</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="styles/main.css" type="text/css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,700;1,400;1,500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lora&family=Roboto:ital,wght@0,700;1,400;1,500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lora:wght@400;700&family=Roboto:ital,wght@0,700;1,400;1,500&display=swap" rel="stylesheet">
+  <body class="center">
+    <header>
+      <div class="light-heading">
+        Oh, the places we will grow...
+      </div>
+    </header>
+    <nav>
+      <ul id="nav-menu">
+        <li><a href="#portfolio">Portfolio</a></li>
+        <li><a href="#blog">Blog</a></li>
+      </ul>
+    </nav>
+    <main>
+      <section>
+        <div id="about">
+          <img class="profile-image" class="center" src="../kerivdw.github.io/images/profile.jpg">          
+          <div class="overlay">
+            <div id="introduction" class="center" >
+              <h1>Hey, I'm Keri van der Westhuizen</h1> 
+              <p>I am currently studying full stack development with Dev Academy Aotearoa.  I'm excited to showcase my work and learnings in this website.</p>
+              <p>I have spent many years working in software development as a quality analyst.  I've really enjoy working in software teams and dabbling in code.  In enrolling in this course I have made the decision to fully commit to a career change into development.</p>            
+              <p>I live in Lower Hutt, with my husband and two teenage daughters. When I am not working I enjoy spending time with family, travelling or spending time in the garden.</p>
+            </div>
+          </div>
+        </div> 
+      </section>
+      <section id="portfolio">
+        <div>
+          <p id="construction"> Responsive and sticky nav coming.... <a href="index.html">click here to go home!</a></p>  
+          <h1>Portfolio</h1>  
+          <h1 class="overlay center">Coming Soon!</h1>          
+        </div>
+      </section>
+      <section id="blog">
+        <div>
+        <p id="construction"> Responsive and sticky nav coming.... <a href="index.html">click here to go home!</a></p>  
+        <div class="grid-3">
+          <div class="grid-item">
+            <a href="blog/core-learning-plan.html">
+              <img class="grid-img" src="images/blog-article-images/glenn-carstens-peters-RLw-UC03Gwc-unsplash.jpg" alt="hand and check list">
+              <p class="grid-label">Learning plan [core]</p>              
+            </a>
+          </div>
+          <div class="grid-item">
+            <a href="blog/tech-display-inline.html"><img class="grid-img" src="images/blog-article-images/hal-gatewood-tZc3vjPCk-Q-unsplash.jpg" alt="wire-frame images on paper">
+            <p class="grid-label" >CSS inline vs inline-block [tech]</p>            
+            </a>
+          </div>
+          <div class="grid-item">
+            <a href="blog/core-identity-values.html"><img class="grid-img" src="images//blog-article-images/sean-stratton-ObpCE_X3j6U-unsplash.jpg" alt="stacked zen rocks">
+            <p class="grid-label">Identity and values [core]</p>              
+            </a>
+          </div>
+          <div class="grid-item">
+            <a href="blog/core-te-houtaewa-template.html"><img class="grid-img" src="images/blog-article-images/louis-hansel-geYw6L4-WU8-unsplash.jpg" alt="kumera on a chopping board">
+              <p class="grid-label">The story of Te-Houtaewa [core]</p>           
+            </a>
+          </div>
+        </div> 
+      </section>  
+      <footer>
+          Placeholder footer
+      </footer>
+    </main>
   </body>
 </html>
