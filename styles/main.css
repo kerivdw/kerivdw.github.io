@@ -61,6 +61,16 @@
     padding: 1rem;
   } 
 
+  ul {
+    margin-left: 0;
+    padding-left: 40px
+  }
+
+  li {
+    font-family: lora, sans-serif;
+    padding: .5rem;
+  }
+
   /*background styles*/
   .background-one {
     background-color: var(--palette-color-one);
