@@ -12,37 +12,39 @@
     <link href="https://fonts.googleapis.com/css2?family=Lora&family=Roboto:ital,wght@0,700;1,400;1,500&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Lora:wght@400;700&family=Roboto:ital,wght@0,700;1,400;1,500&display=swap" rel="stylesheet">
   </head>  
-  <body class="center">
-    <div id="construction"> Responsive and sticky nav coming.... <a href="../index.html#blog">click here to go back to the blog menu!</a></div>  
-    <article id="blog-article">
-      <section class="blog-heading">
-        <h1>What does it mean to display inline vs inline-block?</h1>
-        <h2>19 January 2023</h2>
-      </section>
-      <section>
-        <p>The <span id="tech-term">display</span> property in CSS, defines how a browser should display the elements within a rending box on a web page.</p>
-  
-        <p>There are multiple values for the CSS display property, however for this blog post we will be comparing <span id="tech-term">inline</span> and <span id="tech-term">inline-block</span> values and the differences between them.  </p>      
-          
-        <p>Both inline and inline-block, will produce the same behavior.  They will render the child elements within the rendering block in the same line together.  Where the two values differ, is in the way that they handle the padding on the elements.</p>
-        
-        <p>The <span id="tech-term">inline-block</span> value, will include all padding when rendering the elements in the rendering box.  <em>As shown in the example below, 20px is included around the menu links Portfolio and About.  Rendering them in the same line together.</em></p>
-
-        <p>The <span id="tech-term">inline</span> value, will only include the left and right padding.  It will ignore the top and bottom padding when rendering the elements in the rendering box. <em>As shown in the example below, the menu links Portfolio and About are only including the left and right padding of 20px and are ignoring the top and bottom padding.  Rendering them in the same line together.</em></p>
-
-        <section class="center">
-          <div class="grid-2">
-            <div>
-              <p class="code-overlay">li { display: inline-block; padding: 20px; }</p>
-              <img class="grid-img-2" src="../images/blog-article-images/inline-block.png">
-            </div>
-            <div>
-              <p class="code-overlay">li { display: inline; padding: 20px; }</p>
-              <img class="grid-img-2" src="../images/blog-article-images/inline.png">
-            </div>
+  <body>
+    <nav class="background-one nav-menu">
+      <a class="nav-menu" href="../index.html#blog">Close</a>
+    </nav>
+    <header>
+    <main class="container">  
+      <header>
+        <h1>inline vs inline-block in css</h1>
+        <h3>19 January 2023</h3>
+      </header>
+      <article>
+        <section class="align-left">
+          <h3>What does it mean to display inline vs inline-block?</h3>
+          <p>The display property in CSS, defines how a browser should display the elements within a rending box on a web page.</p>
+    
+          <p>There are multiple values for the CSS display property, however for this blog post we will be comparing inline and inline-block values and the differences between them.</p>      
+            
+          <p>Both inline and inline-block, will produce the same behavior.  They will render the child elements within the rendering block in the same line together.  An example of where this may be used is, if you had a list of links you wanted to display horizontally in a navigation menu.  Where the two values differ, is in the way that they handle the padding on the elements.</p>
+          <div class="align-center">
+            <p>The <span class="code-style">inline-block</span> value, will include all padding when rendering the elements in the rendering box.  <em>As shown in the example below, 20px is included around the menu links Portfolio and About.  Rendering them in the same line together.</em></p>
+            <p class="mono-font">li { display: inline-block; padding: 20px; }</p>
+            <img class="image-small-30" src="../images/blog-article-images/inline-block.png">
           </div>
+          <div class="align-center">
+            <p>The <span class="code-style">inline</span> value, will only include the left and right padding.  It will ignore the top and bottom padding when rendering the elements in the rendering box. <em>As shown in the example below, the menu links Portfolio and About are only including the left and right padding of 20px and are ignoring the top and bottom padding.  Rendering them in the same line together.</em></p>
+  
+            <p class="mono-font">li { display: inline; padding: 20px; }</p>
+            <img class="image-small-30" src="../images/blog-article-images/inline.png">
+          </div>
+            </div>
+          </section>
         </section>
-      </section>
-    </article>  
+      </article>  
+    </main>
   </body>
 </html>
