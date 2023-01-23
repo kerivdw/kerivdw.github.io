@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Javascript and the DOM</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="../styles/main.css" type="text/css">
+    <meta charset="UTF-8">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,700;1,400;1,500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lora&family=Roboto:ital,wght@0,700;1,400;1,500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lora:wght@400;700&family=Roboto:ital,wght@0,700;1,400;1,500&display=swap" rel="stylesheet">
+  </head>  
+  <body>
+    <nav class="background-one nav-menu">
+      <a class="nav-menu" href="../index.html#blog">Close</a>
+    </nav>
+    <header>
+    <main class="container">  
+      <header>
+        <h1>Javascript and the DOM</h1>
+        <h3>26 January 2023</h3>
+      </header>
+      <article>
+        <section class="align-left">
+          <h3>What is Javascript?</h3>
+          <p>Javascript is a programming language that is used to create the interactive elements on a web page.  When combined with html and css it can create a fully interactive experience.  In explaining how javascript works I will use the analogy of building and using a children’s playground.  For context the playground will contain some swings, a see-saw and a slide.</p>
+          <p>There are three main components that make up the interactive experience of building a web page and these are the html file that contains the structural elements of a web page, the css file that contains the styling elements of a webpage and the javascript file that contains the interactive elements of a web page.</p>
+          <p>In the playground example;</p>
+          <p><em>The html file would contain</em> the structural elements of the park.  The playground equipment; the swing, the see-saw and the slide.</p>
+          <p><em>The css file would contain</em> the styling elements of the park, the colour of the turf, the colour and size of the playground equipment.  Where the equipment is placed in the park.</p>
+          <p><em>The javascript file would contain</em> the dynamic and interactive elements of the playground equipment. How you can use a swing, see-saw or slide.</p>
+          <p>If I was to add a new piece of equipment to the park, a water fountain.  The html file would contain the water fountain.  The css file would describe the fountain’s style i.e. the size of the water fountain and how the fountain will look, the colour of it and where it is in the park.  The javascript file would determine the interaction.  If I click the water fountain button, then water will flow from the fountain for 5 minutes.</p>
+          <h3>What is the DOM?</h3>
+          <p><em>The domain object model</em> (DOM) is where the web page html file and the css file come together in memory to form an object that represents a web page.</p>
+          <p>It is defined by the W3C standard and is made up of a hierarchical tree structure.  Each separate part of the structure is called a node.  Elements, attributes and text are different types of nodes that make up the tree structure. </p>
+          <p>Like a family tree, the nodes are created in a hierarchical format that give them relationships to one another of parent, child, sibling.  This allows scripting languages like javascript to traverse up and down the web page and interact or change specific nodes.</p>
+          <p><em>The dom application programming interface</em> (api) is an interface written in javascript, it defines the contract between javascript and the domain object model and defines how javascript can interact with it.  The api allows javascript to make changes to the html and css nodes on the domain object model, this is what creates the interactive experience on a web page.</p>
+          <p>It is also useful to know that there is only one DOM API, that is defined by a W3C specification.  However each browser implements their own version of the specification.  This means that full support may not be provided for all DOM interfaces.  It is useful to understand what support is provided when using a particular api.</p>
+          <h3>What is control flow in Javascript and how does it work?</h3>
+          <p>When Javascript is run on your computer, As a standard rule it runs the code from the top of the file to the bottom of the file.  This is called the control flow.  The exception to this is that if in the running of the program the code actions any statements that change the flow of the program.  Examples of statements that can change the flow of a program include; loops, conditional statements and functions.</p>
+          <p>In a control flow statement <em>loops</em> are repetitive actions.  They will keep repeating the action in the code until there is nothing left to loop over.  In the playground example a looping action may be to climb the stairs for the slide.  The code may repeat the flow of the loop until there are no more stairs remaining.  For example, lift the left foot and then the right foot alternatively until there are no steps remaining.  The control flow for this action would stop when the total number of stairs have been actioned.</p>
+          <p>In a control flow statement <em>conditional statements</em> are decision points.  They allow a decision to be made in the flow of the code and enable the control flow to decide on one of multiple options.  Examples of conditional statements include if statements  and switches.  In the playground example a decision point may be.  If the slide is available, then sit and slide. else join the line.</p>
+          <p>In a control flow statement <em>functions</em> are designed to perform a particular task.    They are defined by the keyword function and followed by a name.  Functions are helpful as they allow you to reuse code for predefined actions.  A function is run when it is triggered by a specific action called an event.  When the event is triggered then the code will run.  In the playground example a function may wrap up all the actions required to use a slide, it will then trigger the function when a certain action happens.  The event might be when a friend says “Let’s slide” when this happens the function will be actioned.  The code will loop through the staircase and if the slide is free then the action will occur to slide down the slide or join the line.  This action will be repeated every time the event “Let’s slide” is repeated.</p>
+          <h3>What is the difference between accessing Objects vs Arrays</h3>
+          <p>Objects and arrays are special data types used in programming languages.  They both use different approaches to access the data.
+          </p>
+          <p>An Object is a representation of a thing, it stores a collection of properties.  An object stores properties on the object using a key value pair stored as a collection.  The properties of an object can be accessed using a dot notation object.key or a bracket notation object[key] format.</p>
+          <p>An array is a representation of a list or collection of related things.  The properties of an array can be accessed via the index of the array eg array[0].  Array index’s start at 0.</p>
+        </section>
+      </article>  
+    </main>
+  </body>
+</html>
