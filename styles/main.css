@@ -147,7 +147,26 @@
     width: 25%;
     height: auto;
     padding: 1rem;
-  }    
+  } 
+
+  @media(max-width:540px){
+    .responsive-image {
+      width: 45%;
+    }
+  }
+    
+  @media(max-width:800px){
+    .responsive-image {
+      width: 35%;
+    }
+  }
+
+  @media(max-width:100px){
+    .responsive-image {
+       grid-template-columns: repeat(2, 1fr);
+       width: 30%;
+    }
+  }
   
   /*layout*/
   .container {
