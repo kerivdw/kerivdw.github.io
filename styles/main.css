@@ -259,6 +259,12 @@
     opacity: 90%;
     width: 70%;
   }
+
+  @media(max-width:540px){
+    .overlay {
+      width: 90%;
+    }
+  }
   
   /*alignment*/
 
